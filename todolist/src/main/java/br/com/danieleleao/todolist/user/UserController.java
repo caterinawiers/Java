@@ -28,10 +28,11 @@ public class UserController {
 //Body - as infos da usuário vão vir dentro do bodu da requisição
 @PostMapping("/")
   public void create(@RequestBody UserModel userModel) {
-    System.out.println(userModel.name);
+    System.out.println(userModel.getUsername());
   }
   
 }
+
 //API dog é uma ferramenta para criar as nossas requisições
 
 //maven tem a função no desenvolvimento da aplicação de gerenciar as dependências e fazer o build. O Maven é uma ferramenta de automação de compilação e gerenciamento de projetos que facilita a gestão de dependências de bibliotecas e a construção de um projeto, além de fornecer um ambiente consistente para o desenvolvimento de aplicativos. Isso inclui a resolução de dependências, compilação, empacotamento e distribuição de um projeto de software. 
